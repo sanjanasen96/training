@@ -1,0 +1,26 @@
+version: 2
+
+models:
+    - name: stg_orders
+      description: stages orders
+      columns:
+          - name: ORDER_ID
+            tests:
+                - not_null
+                - unique
+
+    - name: stg_customers
+      description: stages customers
+      columns:
+          - name: CUSTOMER_ID
+            tests:
+                - not_null
+                - unique
+
+    - name: stg_order_items
+      description: stages order items
+      columns:
+          - name: ORDER_ITEM_ID
+            tests:
+                - not_null
+                - unique
