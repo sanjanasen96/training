@@ -1,0 +1,10 @@
+version: 2
+
+models:
+    - name: fct_order_items
+      description: joins orders to order items
+      columns:
+          - name: ORDER_ITEM_ID
+            tests:
+                - not_null
+                - unique
